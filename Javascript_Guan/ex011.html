@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checador de nacionalidade</title>
+</head>
+<body>
+    <h1>Teste de Nacionalidade</h1>
+    Nacionalidade: <input type="text" name='nome' id='nome'>
+    <input type='button' value='verificar' onclick='checar()'>
+    <div id='res'>
+
+    </div>
+    <script>
+        function checar(){
+            var nac = document.querySelector('input#nome')
+            var res = document.querySelector('div#res')
+            if(nac != 'Brasileiro'){
+                res.innerHTML = `<p>Você é gringo!<p/>`
+            }
+        }
+    </script>
+</body>
+</html>
